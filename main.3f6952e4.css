@@ -506,7 +506,7 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .lead {
     font-size: 16.5px;
   }
@@ -668,7 +668,7 @@ dd {
 .dl-horizontal dd:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -809,7 +809,7 @@ pre code {
 .container:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .container {
     width: 750px;
   }
@@ -1073,7 +1073,7 @@ pre code {
 .col-xs-offset-12 {
   margin-left: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .col-sm-1,
   .col-sm-2,
   .col-sm-3,
@@ -2300,7 +2300,7 @@ textarea.input-lg {
   margin-bottom: 10px;
   color: #404040;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .form-inline .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -2374,7 +2374,7 @@ textarea.input-lg {
 .form-horizontal .form-group:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
@@ -2384,13 +2384,13 @@ textarea.input-lg {
 .form-horizontal .has-feedback .form-control-feedback {
   right: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .form-horizontal .form-group-lg .control-label {
     padding-top: 11px;
     font-size: 14px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .form-horizontal .form-group-sm .control-label {
     padding-top: 6px;
     font-size: 10px;
@@ -2989,7 +2989,7 @@ tbody.collapse.in {
   bottom: 100%;
   margin-bottom: 2px;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-right .dropdown-menu {
     right: 0;
     left: auto;
@@ -3419,7 +3419,7 @@ tbody.collapse.in {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .nav-justified > li,
   .nav-tabs.nav-justified > li {
     display: table-cell;
@@ -3447,7 +3447,7 @@ tbody.collapse.in {
 .nav-tabs.nav-justified > .active > a:hover {
   border: 1px solid #ddd;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .nav-tabs-justified > li > a,
   .nav-tabs.nav-justified > li > a {
     border-bottom: 1px solid #ddd;
@@ -3487,7 +3487,7 @@ tbody.collapse.in {
 .navbar:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar {
     border-radius: 0;
   }
@@ -3500,7 +3500,7 @@ tbody.collapse.in {
 .navbar-header:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-header {
     float: left;
   }
@@ -3524,7 +3524,7 @@ tbody.collapse.in {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -3563,7 +3563,7 @@ tbody.collapse.in {
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .container-fluid > .navbar-collapse,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
@@ -3576,7 +3576,7 @@ tbody.collapse.in {
   z-index: 1000;
   border-width: 0 0 1px;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-static-top {
     border-radius: 0;
   }
@@ -3588,7 +3588,7 @@ tbody.collapse.in {
   left: 0;
   z-index: 1030;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-fixed-bottom,
   .navbar-fixed-top {
     border-radius: 0;
@@ -3617,7 +3617,7 @@ tbody.collapse.in {
 .navbar-brand > img {
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar > .container-fluid .navbar-brand,
   .navbar > .container .navbar-brand {
     margin-left: -15px;
@@ -3647,7 +3647,7 @@ tbody.collapse.in {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-toggle {
     display: none;
   }
@@ -3682,7 +3682,7 @@ tbody.collapse.in {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-nav {
     float: left;
     margin: 0;
@@ -3705,7 +3705,7 @@ tbody.collapse.in {
   box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.1),
     0 1px 0 hsla(0, 0%, 100%, 0.1);
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-form .form-group {
     display: inline-block;
     margin-bottom: 0;
@@ -3763,7 +3763,7 @@ tbody.collapse.in {
     margin-bottom: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-form {
     width: auto;
     border: 0;
@@ -3805,14 +3805,14 @@ tbody.collapse.in {
   margin-top: 0.5px;
   margin-bottom: 0.5px;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-text {
     float: left;
     margin-left: 15px;
     margin-right: 15px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-left {
     float: left !important;
   }
@@ -4476,7 +4476,7 @@ button.close {
 .carousel-caption .btn {
   text-shadow: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 993px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-next,
@@ -4595,7 +4595,7 @@ button.close {
     display: inline-block !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 993px) and (max-width: 991px) {
   .visible-sm {
     display: block !important;
   }
@@ -4610,17 +4610,17 @@ button.close {
     display: table-cell !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 993px) and (max-width: 991px) {
   .visible-sm-block {
     display: block !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 993px) and (max-width: 991px) {
   .visible-sm-inline {
     display: inline !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 993px) and (max-width: 991px) {
   .visible-sm-inline-block {
     display: inline-block !important;
   }
@@ -4690,7 +4690,7 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 993px) and (max-width: 991px) {
   .hidden-sm {
     display: none !important;
   }
@@ -4841,7 +4841,7 @@ body.minimal {
 .section-container.only-container {
   min-height: 84vh;
 }
-@media (max-width: 768px) {
+@media (max-width: 993px) {
   .section-container:first-of-type {
     padding-top: 30px;
   }
@@ -4994,7 +4994,7 @@ textarea {
 }
 .card-container {
   background-color: #fff;
-  padding: 2rem 5rem;
+  padding: 2rem 3rem;
   position: relative;
   width: 80%;
   margin: -10em auto 20px;
@@ -5028,7 +5028,7 @@ textarea {
     filter: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 993px) {
   .projects-carousel .carousel-control {
     display: none;
   }
@@ -5077,7 +5077,7 @@ textarea {
   border: none;
   min-height: inherit;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar {
     margin: 10px;
   }
@@ -5091,7 +5091,7 @@ textarea {
 .navbar-inverse .navbar-collapse .navbar-nav {
   padding: 20px;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-default .navbar-collapse,
   .navbar-inverse .navbar-collapse {
     margin: 0;
@@ -5119,7 +5119,7 @@ textarea {
 .navbar-inverse .navbar-toggle:hover {
   background-color: #fff;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-inverse .navbar-nav > li > a {
     border-right: 1px solid #fff;
   }
@@ -5135,12 +5135,12 @@ textarea {
 .navbar-default .navbar-nav {
   border-bottom: 1px solid #eee;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-default .navbar-nav {
     border: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) {
   .navbar-default .navbar-nav > li > a {
     border-right: 1px solid #000;
   }
@@ -5153,7 +5153,7 @@ textarea {
 .navbar-default .navbar-toggle:hover {
   background-color: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 993px) {
   .navbar-inverse {
     background-color: transparent;
   }
