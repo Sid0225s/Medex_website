@@ -1,0 +1,706 @@
+/*CSS Defaults*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-position: center;
+    color: black;
+    overflow-x: hidden;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+main #main-div {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section {
+    width: 100%;
+    padding: 40px 0;
+    padding-bottom: 60px;
+}
+
+section .heading {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-right: -0.1rem;
+    font-weight: bold;
+}
+
+section .heading .head-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+    margin-top: 5px;
+}
+
+section .heading .head-border .box {
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+
+section .heading .head-border .line {
+    width: 100px;
+    height: 1px;
+    background-color: black;
+}
+
+section .sec-body {
+    height: calc(100% - (98px));
+    width: 100%;
+    margin-top: 30px;
+}
+
+a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+
+/* Navbar */
+
+nav {
+    padding: 0 30px;
+    z-index: 999;
+    background-color: white;
+}
+
+nav #logo {
+    font-family: merriweather;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    margin-right: -0.15rem;
+    color: #000 !important;
+    margin-top: 7px;
+}
+
+nav #navs div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav #navs a {
+    font-family: novaFlat;
+    margin: 0 20px;
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+    color: #000 !important;
+}
+
+nav #navs a:hover {
+    color: #003fc7 !important;
+}
+
+nav .fa-bars {
+    position: absolute;
+    font-size: 25px;
+    top: 50%;
+    right: 20px;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+/* Home */
+
+#home {
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    color: white !important;
+}
+
+#home #image img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+#home #welcome {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 25px;
+}
+
+#welcome #branding {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#branding #images {
+    margin-bottom: 40px;
+}
+
+#branding img {
+    width: 100px;
+    margin: 0 10px;
+    mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.3) 30%, #000 50%, rgba(0, 0, 0, 0.3) 70%);
+    mask-size: 200%;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .3) 30%, #000 50%, rgba(0, 0, 0, .3) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s linear infinite;
+}
+
+#welcome #branding #name {
+    font-size: 2rem;
+    font-family: merriweather;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    margin-right: -0.2rem;
+}
+
+#welcome #branding #tag {
+    font-size: 1.25rem;
+    letter-spacing: 0.2rem;
+    margin-right: -0.2rem;
+}
+
+#welcome #branding #nimbus {
+    margin-top: 30px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    transition: all 0.75s;
+    cursor: pointer;
+}
+
+#welcome #branding #medextrous {
+    margin-top: 15px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 7.5px;
+    letter-spacing: 1.25px;
+    transition: all 0.75s;
+    cursor: pointer;
+    font-size: 0.7em;
+}
+
+#welcome #branding #nimbus:hover {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border-color: #000;
+}
+
+#welcome #branding #medextrous:hover {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border-color: #000;
+}
+
+
+/*About Us*/
+
+#about #content {
+    width: 45%;
+    height: 100%;
+    margin: 0 20px;
+    font-size: 17.5px;
+}
+
+#about #content span {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    margin-bottom: 5px;
+}
+
+#about #image {
+    width: 45%;
+    max-height: 450px;
+    margin: 0 20px;
+}
+
+#about #image img {
+    min-width: 101%;
+}
+
+
+/* Projects */
+
+#projects {
+    background-color: rgb(243, 243, 243);
+}
+
+#projects .project-card {
+    width: 300px;
+    height: 380px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(134, 134, 134);
+    border: 1px solid #1f1f1fa1;
+    position: relative;
+    margin: 20px;
+    margin-top: 50px;
+    color: black;
+}
+
+#projects .project-card .project-image {
+    width: 100px;
+    height: 100px;
+    background-color: #003fc7;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 30%;
+    border: 2px solid white;
+    transition: all 0.5s;
+    position: absolute;
+    top: -50px;
+    left: 100px;
+    color: white;
+    font-size: 36px;
+}
+
+#projects .project-card:hover .project-image {
+    border-radius: 50%;
+}
+
+#projects .project-card .project-image-blur {
+    height: 150px;
+    background-color: #003fc7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: all 0.5s;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+#projects .project-card:hover .project-image-blur {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+#projects .project-card .project-name {
+    padding: 8px;
+    font-family: merriweather;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+#projects .project-card .project-desc {
+    padding: 4px 10px;
+    font-size: 14px;
+}
+
+#projects .project-card .links {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    bottom: 0;
+    background-color: #003fc7;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: all 0.5s;
+    color: white;
+    overflow: hidden;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#projects .project-card .links span {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top: 1px;
+    text-transform: uppercase;
+    font-family: merriweather;
+}
+
+#projects .project-card:hover .links {
+    height: 40px;
+}
+
+#projects .more-projects {
+    height: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#projects #mp-btn {
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    margin-right: -2px;
+    border: 1px solid black;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+#mp-btn:hover {
+    background-color: #003fc7;
+    border: 1px solid transparent !important;
+    box-shadow: 0px 0px 5px #003fc7;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Events */
+
+.event-card {
+    width: 250px;
+    height: 250px;
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin: 20px 15px;
+    color: white;
+}
+
+.event-card img {
+    width: 100%;
+    filter: grayscale(0%) blur(0px);
+    -webkit-filter: grayscale(0%) blur(0px);
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.event-card .link-head {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    background-color: #003fc7;
+    cursor: pointer;
+    font-size: 21px;
+    z-index: 9;
+}
+
+.event-card .link-head i {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.event-card .event-description {
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.event-card .event-description .e-heading {
+    padding: 6px 8px;
+    font-family: merriweather;
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.event-card .event-description .e-info {
+    font-size: 13px;
+}
+
+.event-card:hover img {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    opacity: 0.4;
+}
+
+.event-card:hover .event-description {
+    height: 100%;
+}
+
+
+/* Team */
+
+#team {
+    background-color: rgb(243, 243, 243);
+}
+
+#team .name-card {
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+#team .name-card .image {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#team .name-card .image img {
+    width: 100%;
+}
+
+#team .name-card .image-name {
+    height: 50px;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/* Contact Us */
+
+#contact {
+    min-height: 0px;
+    background: url("./media/contact.jpg");
+    background-size: cover;
+    background-position-y: center;
+    padding: 0;
+    color: white;
+}
+
+#contact #cover {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    padding: 40px 0;
+}
+
+#contact #contacts {
+    width: 50%;
+    text-align: center;
+}
+
+#contact #contacts img {
+    width: 100px;
+    margin: 10px 0;
+}
+
+#contact #contacts #links i {
+    margin: 10px 20px;
+    font-size: 26px;
+    transition: all 0.2s ease-in-out;
+}
+
+#contact #contacts #links i:hover {
+    transform: translateX(3px);
+    color: #003fc7;
+    cursor: pointer;
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 1024px) {
+    #about #content {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    #about #content {
+        font-size: 12px;
+        margin: 0 10px;
+    }
+    #about #image {
+        margin: 0 10px;
+    }
+    nav #navs a {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #gear {
+        display: none !important;
+    }
+    #about #content {
+        width: 90%;
+        font-size: 16px;
+    }
+    #about #image {
+        width: 80%;
+        margin-top: 30px;
+    }
+    nav #navs {
+        display: block !important;
+        position: absolute;
+        top: 42px;
+        right: 0;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.5s;
+        background-color: white;
+    }
+    nav #navs div {
+        margin: 30px auto;
+    }
+    nav a {
+        margin: auto;
+    }
+    nav #navs a {
+        font-size: 1.75rem;
+    }
+    nav .fa-bars {
+        display: block;
+    }
+    #welcome #branding {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    nav #navs {
+        height: auto !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #workshops .heading {
+        font-size: 1.5rem;
+    }
+    #contact #form {
+        width: 100%;
+    }
+    #contact #contacts {
+        width: 100%;
+    }
+    #form input,
+    #form textarea {
+        margin: 15px auto;
+        border: 1px solid white !important;
+    }
+    input[type="submit"] {
+        margin-bottom: 50px !important;
+    }
+    #contact #cover {
+        background: none;
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #workshops .heading {
+        font-size: 1.25rem;
+    }
+    #welcome #branding #name {
+        font-size: 1.7rem;
+    }
+    #welcome #branding #tag {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #welcome #branding #name {
+        font-size: 1.5rem;
+    }
+    #team .year .number {
+        width: 70px;
+        font-size: 26px;
+        margin-right: 10px;
+    }
+}
+
+main {
+    display: block;
+}
+
+#msgload {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #112240;
+    animation: animateBg 10s linear infinite;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+@keyframes animateBg {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#msgload .msgpreloader {
+    position: relative;
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+#msgload .msgpreloader span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(20deg * var(--i)));
+}
+
+#msgload .msgpreloader span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00cffd;
+    box-shadow: 0px 0px 10px #00cffd, 0px 0px 20px #00cffd, 0px 0px 40px #112240, 0px 0px 80px #00cffd, 0px 0px 100px #112240;
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i))
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1);
+    }
+    80%,
+    100% {
+        transform: scale(0);
+    }
+}

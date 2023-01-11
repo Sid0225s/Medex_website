@@ -1,0 +1,153 @@
+/*Import Fonts*/
+
+@font-face {
+    font-family: merriweather;
+    src: url("./fonts/Merriweather-Regular.ttf");
+}
+
+@font-face {
+    font-family: novaFlat;
+    src: url("./fonts/NovaFlat-Regular.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+/*CSS Defaults*/
+
+
+/* Team */
+
+.team .year {
+    width: 90%;
+    margin: 50px auto;
+    max-width: 1000px;
+    height: 300px;
+}
+
+.team .year .number {
+    color: black;
+    height: 100%;
+    width: 80px;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D43F52;
+    border-radius: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: novaFlat;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+
+.team .year .number:nth-of-type(even) {
+    writing-mode: vertical-rl;
+    transform: rotate(0deg);
+    margin: 0;
+    margin-left: 20px;
+}
+
+.team .year .frame {
+    height: 300px;
+    padding: 35px 0 5px 0;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.frame::-webkit-scrollbar {
+    height: 5px;
+}
+
+
+/* Track */
+
+.frame::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+/* Handle */
+
+.frame::-webkit-scrollbar-thumb {
+    background: #D43F52;
+}
+
+
+/* Handle on hover */
+
+.frame::-webkit-scrollbar-thumb:hover {
+    background: #942736;
+}
+
+.team .year .frame .frame-flex {
+    width: fit-content;
+}
+
+.team .year .frame .name-card {
+    border:2px solid black;
+    height: 240px;
+    overflow: hidden;
+    width: 200px;
+    position: relative;
+    /* border-radius: 10px; */
+    margin-right: 10px;
+}
+
+.team .year .frame .name-card .team-image {
+    width: 100%;
+    height: 200px;
+}
+
+.team .year .frame .name-card .team-name {
+    height: 40px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: merriweather;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 12px !important;
+    font-weight: bold;
+}
+
+.name-card #links {
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 40px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.name-card #links span {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 5px 7px;
+    border-radius: 5px;
+    transform: translateY(-15px);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    margin: 0 2.5px;
+    cursor: pointer;
+}
+
+.name-card #links i {
+    color: rgb(45, 45, 45);
+    font-size: 18px;
+}
+
+.name-card:hover #links span {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
