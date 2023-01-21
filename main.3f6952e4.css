@@ -11,6 +11,48 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+.core {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 725px) {
+  .core {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+.cardcore {
+  border: solid 2px black;
+  height: 32rem;
+  width: 28rem;
+  margin: 4rem;
+}
+.corename {
+  height: 40px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: merriweather;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 12px !important;
+  font-weight: bold;
+}
+.carousel-inner p {
+  font-size: 1rem;
+}
+.row {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
 .navul {
   margin: 0.25px -15px;
 }
@@ -226,7 +268,7 @@ html {
 
 .textTeam {
   text-align: center;
-  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .sp23 {
   display: flex;
@@ -247,18 +289,12 @@ html {
 }
 
 .ab12 img {
-  width: 69%;
+  width: 79%;
   padding: 0.2rem;
   border: 0.3rem solid black;
   margin: 0.6rem;
 }
 
-.ab12 img {
-  width: 69%;
-  padding: 0.2rem;
-  border: 0.3rem solid black;
-  margin: 0.6rem;
-}
 #sp123 {
   font-weight: 900;
 }
